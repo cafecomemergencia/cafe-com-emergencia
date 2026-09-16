@@ -1,128 +1,57 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#090909">
-  <meta name="description" content="Café com Emergência — Conversas necessárias no meio do caos. Histórias reais da emergência.">
-  <title>Café com Emergência | Em breve</title>
-  <style>
-    * { box-sizing: border-box; }
-    html, body { margin: 0; min-height: 100%; }
-    body {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background:
-        radial-gradient(circle at 50% 35%, rgba(255, 255, 255, .045), transparent 34%),
-        linear-gradient(145deg, #050505, #111 55%, #070707);
-      color: #f5f5f5;
-      font-family: Arial, Helvetica, sans-serif;
-      overflow-x: hidden;
-    }
-    .page {
-      width: min(920px, 100%);
-      min-height: 100vh;
-      padding: 42px 24px 34px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
-    .logo {
-      width: min(560px, 88vw);
-      height: auto;
-      display: block;
-      margin-bottom: 34px;
-      filter: drop-shadow(0 12px 28px rgba(0,0,0,.45));
-      border-radius: 4px;
-    }
-    .eyebrow {
-      letter-spacing: .22em;
-      font-size: 13px;
-      font-weight: 700;
-      color: #e51b23;
-      margin: 0 0 14px;
-      text-transform: uppercase;
-    }
-    h1 {
-      margin: 0;
-      font-size: clamp(34px, 7vw, 64px);
-      line-height: .98;
-      letter-spacing: .04em;
-      text-transform: uppercase;
-    }
-    .tagline {
-      max-width: 650px;
-      margin: 20px auto 0;
-      font-size: clamp(17px, 2.8vw, 23px);
-      line-height: 1.45;
-      color: #d7d7d7;
-    }
-    .description {
-      max-width: 590px;
-      margin: 18px auto 0;
-      font-size: 15px;
-      line-height: 1.7;
-      color: #a9a9a9;
-    }
-    .links {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 12px;
-      margin-top: 30px;
-    }
-    .links a {
-      color: #fff;
-      text-decoration: none;
-      border: 1px solid rgba(255,255,255,.22);
-      border-radius: 999px;
-      padding: 11px 19px;
-      font-size: 14px;
-      transition: .2s ease;
-      background: rgba(255,255,255,.035);
-    }
-    .links a:hover {
-      border-color: rgba(229,27,35,.75);
-      transform: translateY(-2px);
-    }
-    footer {
-      position: absolute;
-      bottom: 18px;
-      color: #666;
-      font-size: 11px;
-      letter-spacing: .08em;
-    }
-    @media (max-width: 600px) {
-      .page { padding-top: 24px; padding-bottom: 55px; }
-      .logo { width: 94vw; margin-bottom: 24px; }
-      .description { font-size: 14px; }
-      footer { position: static; margin-top: 42px; }
-    }
-  </style>
-</head>
-<body>
-  <main class="page">
-    <img class="logo" src="logo.jpg" alt="Café com Emergência">
-    <p class="eyebrow">Um novo espaço está chegando</p>
-    <h1>Em breve</h1>
-    <p class="tagline">Conversas necessárias no meio do caos.<br>Histórias reais da emergência.</p>
-    <p class="description">
-      Estamos preparando um novo espaço para o Café com Emergência.
-      Em breve, episódios, conteúdos, artigos, referências e muito mais sobre Medicina de Emergência.
-    </p>
-
-    <!-- Substitua os # pelos links oficiais quando quiser -->
-    <nav class="links" aria-label="Redes sociais">
-      <a href="#" aria-label="Instagram">Instagram</a>
-      <a href="#" aria-label="YouTube">YouTube</a>
-      <a href="#" aria-label="Spotify">Spotify</a>
-    </nav>
-
-    <footer>CAFÉ COM EMERGÊNCIA</footer>
-  </main>
-</body>
-</html>
+<!doctype html><html lang="pt-BR"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#080808"><meta name="description" content="Café com Emergência — conversas necessárias no meio do caos. Histórias reais da emergência.">
+<title>Café com Emergência</title>
+<style>
+:root{--bg:#080808;--panel:#111;--text:#f5f5f5;--muted:#aaa;--red:#d92727;--line:#292929;--max:1120px}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 50% -10%,rgba(217,39,39,.18),transparent 35%),var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}.bar{height:4px;background:var(--red)}.container{width:min(var(--max),calc(100% - 40px));margin:auto}
+header{min-height:88vh;display:flex;align-items:center;position:relative;overflow:hidden}header:after{content:"";position:absolute;width:520px;height:520px;border:1px solid #ffffff0d;border-radius:50%;right:-180px;top:10%;box-shadow:0 0 0 80px #ffffff03,0 0 0 160px #ffffff02}
+.hero{padding:70px 0;position:relative;z-index:1}.logo{width:min(380px,82vw);display:block;margin-bottom:38px;border-radius:8px}.eyebrow,.kicker{color:#ff3b30;font-size:.76rem;font-weight:800;letter-spacing:.17em;text-transform:uppercase}.eyebrow{margin-bottom:16px}
+h1{font-size:clamp(2.4rem,6vw,5rem);line-height:1.02;letter-spacing:-.04em;max-width:850px;margin:0 0 22px}h1 span{color:var(--red)}.hero-copy{color:#c7c7c7;font-size:clamp(1.05rem,2vw,1.3rem);max-width:750px;margin:0 0 32px}
+.actions{display:flex;flex-wrap:wrap;gap:12px}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border:1px solid #3b3b3b;border-radius:5px;font-weight:800;font-size:.84rem;letter-spacing:.04em;transition:.2s}.btn:hover{transform:translateY(-2px);border-color:#777}.btn.primary{background:var(--red);border-color:var(--red)}
+section{padding:90px 0;border-top:1px solid var(--line)}.kicker{margin-bottom:12px}h2{font-size:clamp(2rem,4vw,3.2rem);line-height:1.05;letter-spacing:-.035em;margin:0 0 22px}.lead{color:#c1c1c1;max-width:780px;font-size:1.08rem}
+.about{display:grid;grid-template-columns:1.05fr .95fr;gap:60px}.quote{border-left:3px solid var(--red);padding:8px 0 8px 24px;font-size:1.25rem;color:#eee}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:36px}.card{background:linear-gradient(145deg,var(--panel),#0d0d0d);border:1px solid var(--line);padding:28px;min-height:175px;border-radius:8px}.icon{color:var(--red);font-size:1.55rem;margin-bottom:12px}.card h3{margin:0 0 8px;font-size:1.15rem}.card p{margin:0;color:var(--muted);font-size:.95rem}
+.podcast{background:linear-gradient(90deg,rgba(217,39,39,.09),transparent 60%),var(--panel)}.podgrid{display:grid;grid-template-columns:1.2fr .8fr;gap:50px;align-items:center}.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.stat{border:1px solid var(--line);padding:24px;border-radius:8px;background:#0d0d0d}.stat strong{display:block;font-size:2rem;line-height:1}.stat span{display:block;color:var(--muted);font-size:.85rem;margin-top:7px}
+.future{text-align:center}.future .lead{margin:0 auto 30px}.center{justify-content:center}footer{padding:40px 0 55px;border-top:1px solid var(--line);color:#858585;font-size:.9rem}.footer{display:flex;justify-content:space-between;gap:30px;align-items:center}.brand{color:#fff;font-weight:800}.socials{display:flex;gap:18px;flex-wrap:wrap}.socials a{color:#bbb}.socials a:hover{color:#fff}
+@media(max-width:800px){header{min-height:auto}.hero{padding:70px 0 80px}.about,.podgrid{grid-template-columns:1fr;gap:32px}.cards{grid-template-columns:1fr}section{padding:70px 0}.footer{flex-direction:column;align-items:flex-start}}
+@media(max-width:480px){.container{width:min(var(--max),calc(100% - 28px))}.logo{width:min(320px,90vw)}.actions{display:grid;grid-template-columns:1fr}.btn{width:100%}}
+</style></head><body><div class="bar"></div>
+<header><div class="container hero"><img class="logo" src="logo.jpg" alt="Café com Emergência">
+<div class="eyebrow">Podcast • Medicina de Emergência</div><h1>Conversas necessárias <span>no meio do caos.</span></h1>
+<p class="hero-copy">Histórias reais da emergência. Um espaço para falar sobre Medicina de Emergência, formação, ciência, comunicação, comportamento e tudo aquilo que acontece entre o protocolo e a realidade.</p>
+<div class="actions"><a class="btn primary" href="https://www.instagram.com/cafecomemergencia/" target="_blank" rel="noopener noreferrer" aria-label="Instagram do Café com Emergência">Instagram</a><a class="btn" href="https://open.spotify.com/show/0p8Rx6G8bGUfrjMLPf0FHX" target="_blank" rel="noopener noreferrer" aria-label="Spotify do Café com Emergência">Spotify</a><a class="btn" href="https://www.youtube.com/@caf%C3%A9comemerg%C3%AAncia" target="_blank" rel="noopener noreferrer" aria-label="YouTube do Café com Emergência">YouTube</a></div></div></header>
+<main>
+<section><div class="container about"><div><div class="kicker">O projeto</div><h2>Mais do que falar sobre emergência.</h2>
+<p class="lead">A emergência é feita de decisões rápidas, pacientes complexos e situações que nem sempre cabem em um protocolo.</p>
+<p class="lead">O Café com Emergência nasceu para conversar sobre aquilo que acontece entre uma conduta e outra — os desafios da formação, as relações humanas, a ciência, a carreira e as histórias que fazem parte de quem vive a emergência.</p></div>
+<div class="quote">“Porque cuidar de quem está do outro lado da maca também exige entender quem somos, como pensamos e como trabalhamos juntos.”</div></div></section>
+<section><div class="container"><div class="kicker">Nossas conversas</div><h2>Diferentes formatos. A mesma vontade de conversar.</h2>
+<p class="lead">Conversas longas, discussões de ciência, reflexões sobre a profissão e formatos mais rápidos para quem vive a rotina da emergência.</p>
+<div class="cards">
+<article class="card"><div class="icon">☕</div><h3>Café com Artigo</h3><p>Discussões aprofundadas a partir de artigos e temas que ajudam a pensar a emergência para além do óbvio.</p></article>
+<article class="card"><div class="icon">🎙</div><h3>Por Dentro das Residências</h3><p>Conversas com quem vive diferentes programas de formação em Medicina de Emergência pelo Brasil.</p></article>
+<article class="card"><div class="icon">🧠</div><h3>Habilidades Essenciais na Emergência</h3><p>Comunicação, multitarefa, trabalho em equipe e outras habilidades que fazem diferença no plantão.</p></article>
+<article class="card"><div class="icon">⚡</div><h3>Café Expresso</h3><p>Conversas curtas sobre temas relevantes para a Medicina de Emergência e para quem escolheu vivê-la.</p></article>
+<article class="card"><div class="icon">🎭</div><h3>Plantão às Cegas</h3><p>Um formato diferente para discutir raciocínio, tomada de decisão e os desafios de pensar sob pressão.</p></article>
+<article class="card"><div class="icon">💬</div><h3>Entrevistas</h3><p>Conversas com pessoas que têm experiências, histórias e perspectivas relevantes para a emergência.</p></article>
+</div></div></section>
+<section class="podcast"><div class="container podgrid"><div><div class="kicker">O podcast</div><h2>Uma conversa sobre a emergência — por quem vive a emergência.</h2>
+<p class="lead">Episódios com médicos, profissionais de saúde e convidados de diferentes áreas, explorando a especialidade, sua formação e os desafios que existem dentro e fora do plantão.</p>
+<div class="actions" style="margin-top:28px"><a class="btn primary" href="https://open.spotify.com/show/0p8Rx6G8bGUfrjMLPf0FHX" target="_blank" rel="noopener noreferrer">Ouça o podcast</a></div></div>
+<div class="quote">
+      O Café com Emergência é um espaço para conversar sobre a Medicina de Emergência,
+      mas também sobre as pessoas, as relações e as escolhas que existem por trás dela.
+    </div>
+    </div></section>
+<section class="future"><div class="container"><div class="kicker">O próximo passo</div><h2>Estamos construindo a nossa casa na internet.</h2>
+<p class="lead">Em breve, este espaço poderá reunir episódios, conteúdos, artigos, referências e muito mais sobre Medicina de Emergência.</p>
+<div class="actions center"><a class="btn primary" href="https://www.instagram.com/cafecomemergencia/" target="_blank" rel="noopener noreferrer">Acompanhe o projeto</a></div></div></section>
+</main>
+<footer><div class="container footer"><div><div class="brand">Café com Emergência</div><div>Conversas necessárias no meio do caos. Histórias reais da emergência.</div></div>
+<div class="socials">
+      <a href="https://www.instagram.com/cafecomemergencia/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a href="https://open.spotify.com/show/0p8Rx6G8bGUfrjMLPf0FHX" target="_blank" rel="noopener noreferrer">Spotify</a>
+      <a href="https://www.youtube.com/@caf%C3%A9comemerg%C3%AAncia" target="_blank" rel="noopener noreferrer">YouTube</a>
+    </div></div></footer>
+</body></html>
