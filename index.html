@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090909">
+  <meta name="description" content="Café com Emergência — Conversas necessárias no meio do caos. Histórias reais da emergência.">
+  <title>Café com Emergência | Em breve</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; }
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background:
+        radial-gradient(circle at 50% 35%, rgba(255, 255, 255, .045), transparent 34%),
+        linear-gradient(145deg, #050505, #111 55%, #070707);
+      color: #f5f5f5;
+      font-family: Arial, Helvetica, sans-serif;
+      overflow-x: hidden;
+    }
+    .page {
+      width: min(920px, 100%);
+      min-height: 100vh;
+      padding: 42px 24px 34px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .logo {
+      width: min(560px, 88vw);
+      height: auto;
+      display: block;
+      margin-bottom: 34px;
+      filter: drop-shadow(0 12px 28px rgba(0,0,0,.45));
+      border-radius: 4px;
+    }
+    .eyebrow {
+      letter-spacing: .22em;
+      font-size: 13px;
+      font-weight: 700;
+      color: #e51b23;
+      margin: 0 0 14px;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(34px, 7vw, 64px);
+      line-height: .98;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+    .tagline {
+      max-width: 650px;
+      margin: 20px auto 0;
+      font-size: clamp(17px, 2.8vw, 23px);
+      line-height: 1.45;
+      color: #d7d7d7;
+    }
+    .description {
+      max-width: 590px;
+      margin: 18px auto 0;
+      font-size: 15px;
+      line-height: 1.7;
+      color: #a9a9a9;
+    }
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 30px;
+    }
+    .links a {
+      color: #fff;
+      text-decoration: none;
+      border: 1px solid rgba(255,255,255,.22);
+      border-radius: 999px;
+      padding: 11px 19px;
+      font-size: 14px;
+      transition: .2s ease;
+      background: rgba(255,255,255,.035);
+    }
+    .links a:hover {
+      border-color: rgba(229,27,35,.75);
+      transform: translateY(-2px);
+    }
+    footer {
+      position: absolute;
+      bottom: 18px;
+      color: #666;
+      font-size: 11px;
+      letter-spacing: .08em;
+    }
+    @media (max-width: 600px) {
+      .page { padding-top: 24px; padding-bottom: 55px; }
+      .logo { width: 94vw; margin-bottom: 24px; }
+      .description { font-size: 14px; }
+      footer { position: static; margin-top: 42px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <img class="logo" src="logo.jpg" alt="Café com Emergência">
+    <p class="eyebrow">Um novo espaço está chegando</p>
+    <h1>Em breve</h1>
+    <p class="tagline">Conversas necessárias no meio do caos.<br>Histórias reais da emergência.</p>
+    <p class="description">
+      Estamos preparando um novo espaço para o Café com Emergência.
+      Em breve, episódios, conteúdos, artigos, referências e muito mais sobre Medicina de Emergência.
+    </p>
+
+    <!-- Substitua os # pelos links oficiais quando quiser -->
+    <nav class="links" aria-label="Redes sociais">
+      <a href="#" aria-label="Instagram">Instagram</a>
+      <a href="#" aria-label="YouTube">YouTube</a>
+      <a href="#" aria-label="Spotify">Spotify</a>
+    </nav>
+
+    <footer>CAFÉ COM EMERGÊNCIA</footer>
+  </main>
+</body>
+</html>
