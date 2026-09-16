@@ -19,7 +19,7 @@ url("hero-bg.jpg") right center/cover no-repeat}
 .hero:before{content:"";position:absolute;width:780px;height:780px;border:1px solid rgba(227,38,43,.34);border-radius:50%;left:-560px;top:-80px;box-shadow:0 0 0 75px rgba(227,38,43,.05),0 0 0 150px rgba(227,38,43,.025)}
 .hero:after{content:"";position:absolute;inset:auto 0 0 0;height:120px;background:linear-gradient(transparent,var(--bg))}
 .hero-inner{position:relative;z-index:2;padding:85px 0 110px;max-width:830px}
-.logo{width:min(430px,82vw);display:block;margin:0 auto 38px;filter:drop-shadow(0 10px 25px rgba(0,0,0,.45))}
+.logo{width:min(430px,82vw);height:auto;display:block;margin:0 auto 38px;filter:drop-shadow(0 10px 25px rgba(0,0,0,.45))}
 .eyebrow,.kicker{color:#ff3b40;font-size:.76rem;font-weight:850;letter-spacing:.18em;text-transform:uppercase}
 .eyebrow{text-align:center;margin-bottom:17px}
 h1{font-size:clamp(3rem,7vw,6rem);line-height:.96;letter-spacing:-.055em;text-align:center;margin:0 auto 24px;max-width:900px}
@@ -53,7 +53,7 @@ footer{padding:42px 0 55px;border-top:1px solid var(--line);color:#858585;font-s
 @media(max-width:800px){
 .container{width:min(var(--max),calc(100% - 30px))}
 .hero{min-height:760px;background:linear-gradient(90deg,rgba(6,6,6,.97),rgba(7,7,7,.83)),url("hero-bg.jpg") center/cover no-repeat}
-.hero-inner{padding:70px 0 105px}.logo{width:min(350px,86vw);margin-bottom:32px}
+.hero-inner{padding:70px 0 105px}.logo{width:min(350px,86vw);height:auto;margin-bottom:32px}
 .about{grid-template-columns:1fr;gap:34px}section{padding:72px 0}
 .cards{grid-template-columns:1fr 1fr;gap:12px}.card{min-height:190px;padding:22px 18px}
 .podcast:before{background:linear-gradient(90deg,rgba(13,13,13,.97),rgba(13,13,13,.72)),url("podcast-bg.jpg") center/cover no-repeat}
@@ -70,7 +70,7 @@ h1{font-size:clamp(2.75rem,13vw,4.2rem)}.hero-copy{font-size:1rem}.quote{font-si
 
 <header class="hero">
   <div class="container hero-inner">
-    <img class="logo" src="logo-transparent.png?v=3" alt="Café com Emergência">
+    <img class="logo" src="logo-correto.png" alt="Café com Emergência">
     <div class="eyebrow">Podcast • Medicina de Emergência</div>
     <h1>Conversas necessárias <span>no meio do caos.</span></h1>
     <p class="hero-copy">Histórias reais da emergência. Um espaço para falar sobre Medicina de Emergência, formação, ciência, comunicação, comportamento e tudo aquilo que acontece entre o protocolo e a realidade.</p>
