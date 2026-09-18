@@ -36,6 +36,23 @@ section{padding:92px 0;border-top:1px solid var(--line)}
 .lead{color:#c1c1c1;max-width:790px;font-size:1.08rem}.lead+p{margin-top:22px}
 .quote{border-left:3px solid var(--red);padding:8px 0 8px 28px;font-size:1.28rem;line-height:1.55;color:#eee}
 
+.episodes{background:#0a0a0a}
+.episodes-head{display:flex;justify-content:space-between;align-items:end;gap:30px}
+.episodes-head-copy{max-width:780px}
+.episodes-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:42px}
+.episode-card{display:grid;grid-template-columns:190px 1fr;background:linear-gradient(145deg,#141414,#0d0d0d);border:1px solid #2b2b2b;border-radius:8px;overflow:hidden;min-height:235px;transition:.22s}
+.episode-card:hover{transform:translateY(-3px);border-color:#555}
+.episode-cover{width:100%;height:100%;min-height:235px;object-fit:cover;display:block}
+.episode-info{padding:23px 23px 22px;display:flex;flex-direction:column}
+.episode-series{color:#ff3b40;font-size:.68rem;font-weight:850;letter-spacing:.13em;text-transform:uppercase;margin-bottom:9px}
+.episode-number{color:#777;font-size:.72rem;margin-bottom:8px}
+.episode-card h3{font-size:1.14rem;line-height:1.2;margin:0 0 12px;letter-spacing:-.015em}
+.episode-date{color:#888;font-size:.78rem;margin-bottom:13px}
+.episode-description{color:#aaa;font-size:.86rem;line-height:1.5;margin:0 0 20px}
+.episode-link{margin-top:auto;color:#fff;font-size:.78rem;font-weight:850;letter-spacing:.05em;text-transform:uppercase}
+.episode-link span{color:var(--red);margin-left:5px}
+.episodes-more{margin-top:34px;text-align:center}
+
 .formats-head{max-width:900px}.cards{display:grid;grid-template-columns:repeat(6,1fr);gap:13px;margin-top:40px}
 .card{background:linear-gradient(145deg,#121212,#0b0b0b);border:1px solid #292929;padding:24px 18px;min-height:235px;border-radius:7px;transition:.2s}
 .card:hover{transform:translateY(-3px);border-color:#4b4b4b}.icon{font-size:1.55rem;margin-bottom:15px}.card h3{margin:0 0 9px;font-size:1rem;line-height:1.18}.card p{margin:0;color:#999;font-size:.86rem;line-height:1.48}
@@ -45,19 +62,23 @@ section{padding:92px 0;border-top:1px solid var(--line)}
 .podcast .container{position:relative;z-index:1}.pod-content{max-width:760px}.pod-content h2 span{color:var(--red)}
 .pod-note{margin-top:34px;border-left:3px solid var(--red);padding-left:26px;color:#ddd;font-size:1.15rem;max-width:690px}
 
-.future{text-align:center;background:linear-gradient(180deg,#080808,#0b0b0b)}.future .lead{margin:0 auto 32px}.center{justify-content:center}
+.cta{text-align:center;background:linear-gradient(180deg,#080808,#0b0b0b)}.cta .lead{margin:0 auto 32px}.center{justify-content:center}
 
 footer{padding:42px 0 55px;border-top:1px solid var(--line);color:#858585;font-size:.88rem}.footer{display:flex;justify-content:space-between;gap:30px;align-items:center}.brand{color:#fff;font-weight:850}.socials{display:flex;gap:22px;flex-wrap:wrap}.socials a{color:#aaa}.socials a:hover{color:#fff}
 
-@media(max-width:1050px){.cards{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:1050px){.cards{grid-template-columns:repeat(3,1fr)}.episode-card{grid-template-columns:150px 1fr}}
 @media(max-width:800px){
 .container{width:min(var(--max),calc(100% - 30px))}
 .hero{min-height:760px;background:linear-gradient(90deg,rgba(6,6,6,.97),rgba(7,7,7,.83)),url("hero-bg.jpg") center/cover no-repeat}
 .hero-inner{padding:70px 0 105px}.logo{width:min(350px,86vw);height:auto;margin-bottom:32px}
 .about{grid-template-columns:1fr;gap:34px}section{padding:72px 0}
+.episodes-head{display:block}.episodes-grid{grid-template-columns:1fr;gap:18px}.episode-card{grid-template-columns:180px 1fr}
 .cards{grid-template-columns:1fr 1fr;gap:12px}.card{min-height:190px;padding:22px 18px}
 .podcast:before{background:linear-gradient(90deg,rgba(13,13,13,.97),rgba(13,13,13,.72)),url("podcast-bg.jpg") center/cover no-repeat}
 .footer{flex-direction:column;align-items:flex-start}
+}
+@media(max-width:560px){
+.episode-card{grid-template-columns:1fr}.episode-cover{height:230px;min-height:230px}.episode-info{padding:21px}
 }
 @media(max-width:480px){
 .cards{grid-template-columns:1fr}.card{min-height:auto}.actions{display:grid;grid-template-columns:1fr}.btn{width:100%}
@@ -84,6 +105,66 @@ h1{font-size:clamp(2.75rem,13vw,4.2rem)}.hero-copy{font-size:1rem}.quote{font-si
 </header>
 
 <main>
+<section class="episodes"><div class="container">
+  <div class="episodes-head">
+    <div class="episodes-head-copy">
+      <div class="kicker">Episódios</div>
+      <h2>As conversas que já aconteceram.</h2>
+      <p class="lead">Um lugar para encontrar os episódios do Café com Emergência e conhecer o que está por trás de cada conversa.</p>
+    </div>
+  </div>
+
+  <div class="episodes-grid">
+    <a class="episode-card" href="episodios/ep42/">
+      <img class="episode-cover" src="https://i.ytimg.com/vi/SKUikwgVccc/maxresdefault.jpg" alt="Capa do episódio 42">
+      <div class="episode-info">
+        <div class="episode-series">Por Dentro das Residências</div>
+        <div class="episode-number">EP. 42</div>
+        <h3>Por dentro das Residências — Medicina de Emergência no Ceará</h3>
+        <div class="episode-date">26 de agosto de 2026</div>
+        <p class="episode-description">Uma conversa sobre a história e a estrutura da residência de Medicina de Emergência no Ceará e a experiência de formação em Fortaleza.</p>
+        <div class="episode-link">Ver episódio <span>→</span></div>
+      </div>
+    </a>
+
+    <a class="episode-card" href="episodios/ep41/">
+      <img class="episode-cover" src="https://i.ytimg.com/vi/SKUikwgVccc/maxresdefault.jpg" alt="Capa do episódio 41">
+      <div class="episode-info">
+        <div class="episode-series">Por Dentro das Residências</div>
+        <div class="episode-number">EP. 41</div>
+        <h3>Por dentro das Residências — episódio 41</h3>
+        <div class="episode-date">2026</div>
+        <p class="episode-description">Conheça os detalhes, experiências e caminhos de formação apresentados neste episódio do quadro.</p>
+        <div class="episode-link">Ver episódio <span>→</span></div>
+      </div>
+    </a>
+
+    <a class="episode-card" href="episodios/ep40/">
+      <img class="episode-cover" src="https://i.ytimg.com/vi/yDCcycAL3po/maxresdefault.jpg" alt="Capa do episódio 40">
+      <div class="episode-info">
+        <div class="episode-series">Outro: Café</div>
+        <div class="episode-number">EP. 40</div>
+        <h3>O guia definitivo de café especial para Emergencistas</h3>
+        <div class="episode-date">12 de agosto de 2026</div>
+        <p class="episode-description">Um guia prático sobre grãos, moagem, proporção, extração e métodos de preparo de café que cabem na rotina do plantão.</p>
+        <div class="episode-link">Ver episódio <span>→</span></div>
+      </div>
+    </a>
+
+    <a class="episode-card" href="episodios/ep39/">
+      <img class="episode-cover" src="https://i.ytimg.com/vi/M7I45dgEVp8/maxresdefault.jpg" alt="Capa do episódio 39">
+      <div class="episode-info">
+        <div class="episode-series">Entrevistas</div>
+        <div class="episode-number">EP. 39</div>
+        <h3>O que todo Médico Emergencista precisa saber de Medicina da Família e Comunidade</h3>
+        <div class="episode-date">05 de agosto de 2026</div>
+        <p class="episode-description">Uma conversa sobre continuidade do cuidado, comunicação entre especialidades e integração entre Medicina de Família e Medicina de Emergência.</p>
+        <div class="episode-link">Ver episódio <span>→</span></div>
+      </div>
+    </a>
+  </div>
+</div></section>
+
 <section><div class="container about">
   <div><div class="kicker">O projeto</div><h2>Mais do que falar sobre emergência.</h2>
   <p class="lead">A emergência é feita de decisões rápidas, pacientes complexos e situações que nem sempre cabem em um protocolo.</p>
@@ -112,9 +193,9 @@ h1{font-size:clamp(2.75rem,13vw,4.2rem)}.hero-copy{font-size:1rem}.quote{font-si
   <div class="pod-note">Toda conversa parte de uma pergunta: o que existe por trás da rotina de quem vive a emergência?</div>
 </div></div></section>
 
-<section class="future"><div class="container">
-  <div class="kicker">O próximo passo</div><h2>Estamos construindo a nossa casa na internet.</h2>
-  <p class="lead">Em breve, este espaço poderá reunir episódios, conteúdos, artigos, referências e muito mais sobre Medicina de Emergência.</p>
+<section class="cta"><div class="container">
+  <div class="kicker">Café com Emergência</div><h2>Continue essa conversa.</h2>
+  <p class="lead">Novos episódios, novas histórias e novas perguntas sobre a Medicina de Emergência.</p>
   <div class="actions center"><a class="btn primary" href="https://www.instagram.com/cafecomemergencia/" target="_blank" rel="noopener noreferrer">Acompanhe o projeto&nbsp; →</a></div>
 </div></section>
 </main>
