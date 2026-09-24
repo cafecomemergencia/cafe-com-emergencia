@@ -9,10 +9,12 @@
         font-size="82"
         font-weight="700"
         letter-spacing="20">CAFÉ COM</text>
-  <text x="627" y="421" text-anchor="middle"
+  <text x="627" y="410" text-anchor="middle"
         fill="#ef1118"
         font-family="Impact, 'Arial Narrow', Arial, sans-serif"
         font-size="267"
         font-weight="900"
-        letter-spacing="-7">EMERGÊNCIA</text>
+        letter-spacing="-7"
+        textLength="1030"
+        lengthAdjust="spacingAndGlyphs">EMERGÊNCIA</text>
 </svg>
