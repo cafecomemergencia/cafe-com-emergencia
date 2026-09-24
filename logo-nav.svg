@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1254 459" role="img" aria-label="Café com Emergência">
+  <g fill="none" stroke="#ef1118" stroke-width="7" stroke-linecap="round">
+    <path d="M112 99H290"/>
+    <path d="M964 99H1142"/>
+  </g>
+  <text x="627" y="127" text-anchor="middle"
+        fill="#ffffff"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="82"
+        font-weight="700"
+        letter-spacing="20">CAFÉ COM</text>
+  <text x="627" y="421" text-anchor="middle"
+        fill="#ef1118"
+        font-family="Impact, 'Arial Narrow', Arial, sans-serif"
+        font-size="267"
+        font-weight="900"
+        letter-spacing="-7">EMERGÊNCIA</text>
+</svg>
